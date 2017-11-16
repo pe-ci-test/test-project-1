@@ -15,9 +15,9 @@ pipeline {
         }
         stage('build') {
             steps {
-                sh 'npm run build --ignore-scripts'
-                sh 'npm run build-schemas --ignore-scripts'
-                sh 'npm run build-doc --ignore-scripts'
+                sh 'npm run build'
+                sh 'npm run build-schemas'
+                sh 'npm run build-doc'
             }
         }
         stage('test') {
