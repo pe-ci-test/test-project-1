@@ -1,0 +1,30 @@
+{
+  "name": "test-project-1",
+  "private": true,
+  "publishConfig": {
+    "registry": "https://www.npmjs.com"
+  },
+  "version": "0.1.0",
+  "description": "testing",
+  "license": "MIT",
+  "main": "dist/commonjs/index.js",
+  "typings": "dist/index.d.ts",
+  "contributors": [],
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@essential-projects/tslint-config": "^0.1.0",
+    "gulp": "^3.9.1",
+    "gulptraum": "^2.2.1",
+    "gulptraum-typescript": "^1.0.0",
+    "tsconfig": "^7.0.0",
+    "tslint": "^5.7.0",
+    "typescript": "^2.5.2"
+  },
+  "scripts": {
+    "build": "gulp build",
+    "prepare": "npm run build && npm run build-schemas && npm run build-doc",
+    "build-doc": "gulp doc",
+    "build-schemas": "gulp typescript-schema"
+  }
+}
