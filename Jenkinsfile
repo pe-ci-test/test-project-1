@@ -1,7 +1,7 @@
 pipeline {
     agent any
     tools {nodejs "node-v7"}
-    def gulp = "$(npm bin)/gulp"
+    def gulp = "${npm bin}/gulp"
 
     stages {
         stage('prepare') {
