@@ -18,15 +18,14 @@ pipeline {
         }
         stage('build') {
             steps {
-                sh 'npm run build'
-                sh 'npm run build-schemas'
-                sh 'npm run build-doc'
+                sh '${GULP} build'
+                sh '${GULP} build-schemas'
+                sh '${GULP} build-doc'
             }
         }
         stage('test') {
             steps {
-                // sh 'npm run test'
-                echo 'nothing'
+                echo '${GULP} test'
             }
         }
     }
