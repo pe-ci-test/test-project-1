@@ -1,6 +1,7 @@
 pipeline {
     agent any
     tools {nodejs "node-v7"}
+    def gulp = "$(npm bin)/gulp"
 
     stages {
         stage('prepare') {
@@ -10,7 +11,7 @@ pipeline {
         }
         stage('lint') {
             steps {
-                sh 'npm run lint --ignore-scripts'
+                sh '${gulp} lint'
             }
         }
         stage('build') {
