@@ -1,7 +1,9 @@
 pipeline {
     agent any
     tools {nodejs "node-v7"}
-    def gulp = './node_modules/.bin/gulp'
+    environment {
+        GULP = './node_modules/.bin/gulp'
+    }
 
     stages {
         stage('prepare') {
@@ -11,7 +13,7 @@ pipeline {
         }
         stage('lint') {
             steps {
-                sh '${gulp} lint'
+                sh '${GULP} lint'
             }
         }
         stage('build') {
