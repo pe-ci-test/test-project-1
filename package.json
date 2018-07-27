@@ -18,7 +18,7 @@
     "gulptraum": "^2.2.1",
     "gulptraum-typescript": "^1.0.0",
     "tsconfig": "^7.0.0",
-    "tslint": "^5.7.0",
+    "tslint": "^5.11.0",
     "typescript": "^2.5.2"
   },
   "scripts": {
