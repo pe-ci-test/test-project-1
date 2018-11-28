@@ -16,7 +16,7 @@
     "@essential-projects/tslint-config": "^1.1.2",
     "gulp": "^3.9.1",
     "gulptraum": "^2.2.1",
-    "gulptraum-typescript": "^1.5.0",
+    "gulptraum-typescript": "^2.0.1",
     "tsconfig": "^7.0.0",
     "tslint": "^5.7.0",
     "typescript": "^3.1.3"
